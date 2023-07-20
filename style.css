@@ -78,3 +78,235 @@ body {
     color: black;
     text-shadow: 3px 3px red;
 }
+
+/* this is for the goat section styling ?  */
+
+.goat-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 180px;
+    padding: 0;
+}
+
+.goat-img img {
+    width: 500px;
+}
+
+.goat-text h2 {
+    text-align: left;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.goat-text p {
+    color: #0B0223;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.goat-text ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.fa-toggle-on,
+.fa-circle-down,
+.fa-people-group {
+    color: var(--commom);
+    padding-right: 4px;
+}
+
+.rogue-btn {
+    background-color: #4EC5F7;
+}
+
+/* this is for the gammer banner  area  */
+.gammer-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gammer-text {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.gammer-img img {
+    width: 80%;
+}
+
+.gammer-text {
+    width: 430px;
+}
+
+.gammer-text h2 {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gammer-text p {
+    font-size: .7rem;
+}
+
+.unleash {
+    color: #23086d;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* this is for the online game section  */
+.online-game h2 {
+    color: #0B0223;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.online-game p {
+    text-align: center;
+}
+
+.funny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 180px;
+}
+
+.card {
+    width: 340px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card figcaption {
+    padding-top: 7px;
+    font-size: .9rem;
+}
+
+/* this is instant play section  */
+.instant-play {
+    width: calc(100vw - 380px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    margin-left:100px ;
+    flex-shrink: inherit;
+    
+}
+
+.instant-text h2 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.instantly {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+}
+.child-img{
+border-radius: 20px;
+position: relative;
+top: -150px;
+left: -50px;
+
+
+}
+/* this is for the responsive layout ? */
+
+/* for small devices  
+*/
+
+@media screen and (max-width:570px) {
+
+    header,
+    nav ul,
+    .goat-banner,
+    .gammer-banner,
+    .card-container,.instant-play {
+        flex-direction: column;
+    }
+
+    .goat-banner {
+        justify-content: center;
+        align-items: center;
+    }
+    .goat-img img {
+        width: 424px;
+    }
+    .gammer-text {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .card-container {
+        margin: 0;
+    }
+    .instant-play{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+/* for medium devices  */
+
+@media screen and (min-width:570px) and (max-width:800px) {
+
+    header,
+    .goat-banner,
+    .gammer-banner,
+    .card-container ,.instant-play{
+        flex-direction: column;
+    }
+
+    .goat-banner {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gammer-text,
+    .card-container {
+        text-align: center;
+        margin-right: 0;
+    }
+
+}
